@@ -1,3 +1,9 @@
+#DIAGRAMA FUNCIONAL
+
+![img_1.png](img_1.png)
+
+
+
 #estructura de carpetas
 
 
@@ -123,3 +129,8 @@ src/
 │   └── AppConfig.java
 └── utils/
 └── UtilityClass.java
+
+
+#BBDD POSTGRESS SQL : tabla Clientes y Polizas
+
+![img_3.png](img_3.png)
