@@ -2,7 +2,10 @@
 
 ![img_1.png](img_1.png)
 
+La arquitectura de software, trabajamos en una orientación de clean architecture con vertical slice, 
+que nos permite organizar el código por funcionalidad.
 
+![img_5.png](img_5.png)
 
 #estructura de carpetas
 
@@ -134,3 +137,35 @@ src/
 #BBDD POSTGRESS SQL : tabla Clientes y Polizas
 
 ![img_3.png](img_3.png)
+
+
+#PENDIENTE
+1- INTEGRATION (EVENTOS)
+    KAKFA/MQ
+    RABBIT-MQ
+2- SECURITY
+    KEYCLOACK
+    ACM
+    WAF
+3- DATA
+    AURORA
+    REDIS/VALKEY
+    DATA LAKE
+4- ORCHESTRATION
+    AIRFLOW
+    STEP FUNCTION
+    EVENTBRIDGE
+5- API
+    CAUCION-API
+    API-HUB
+    API-HUB-INTERNAL
+6- CONFIG
+    SECRETS
+    PARAMETER
+7- NOTIFICATIONS
+    SES
+8- DNS
+   ROUT53
+   DNS
+9- CLUSTER
+    MICRO
