@@ -7,8 +7,46 @@ que nos permite organizar el código por funcionalidad.
 
 ![img_5.png](img_5.png)
 
-#estructura de carpetas
 
+#estructura de carpetas
+la estructura de carpetas siguiendo Clean Architecture con Vertical Slices y DDD, organizando el código por funcionalidad.
+Basándonos en el diagrama funcional del área de negocio de Caución
+
+1- Clean Architecture
+Separa claramente las capas:
+api/: controladores (interfaz de entrada)
+application/: casos de uso, comandos, respuestas, mapeadores
+domain/: entidades, value objects, interfaces de repositorio
+infrastructure/: implementación concreta de los repositorios (por ejemplo, JPA)
+Esto permite que el dominio y los casos de uso no dependan de frameworks ni de detalles técnicos.
+
+2- Vertical Slice Architecture
+Cada carpeta como informes/, comites/, emitir/, garantia/, etc., 
+representa una funcionalidad o caso de uso completo, y dentro de cada una tienes:
+
+Su propio controlador
+Su propio caso de uso
+Sus entidades y value objects
+Su repositorio
+Su infraestructura
+Esto es exactamente lo que propone la arquitectura de Vertical Slices: 
+organizar el código por funcionalidad, no por tipo de archivo.
+
+3- DDD
+Estás aplicando Domain-Driven Design porque:
+
+Tienes entidades (Informe, Poliza, Siniestro, etc.)
+Tienes value objects (InformeValueObject, PolizaValueObject, etc.)
+Tienes repositorios como interfaces en el dominio (InformeRepository)
+Estás separando claramente el dominio del negocio de la infraestructura
+Además, cada módulo parece representar un Bounded Context, lo cual es un concepto clave en DDD.
+
+Conclusión
+Tu estructura:
+
+✅ Sigue Clean Architecture (capas bien definidas)
+✅ Usa Vertical Slices (organización por funcionalidad)
+✅ Aplica DDD (modelado del dominio, separación de responsabilidades)
 
 src/
 └── main/
